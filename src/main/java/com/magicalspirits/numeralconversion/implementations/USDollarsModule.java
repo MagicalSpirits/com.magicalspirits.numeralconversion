@@ -72,7 +72,7 @@ public class USDollarsModule extends AbstractModule
 	{
 		Injector injector = Guice.createInjector(new USDollarsModule(false, false));
 		NumeralConverter nc = injector.getInstance(NumeralConverter.class);
-		for(int i = 1; i < 10000L; i++)
+		for(int i = 1; i <= 10000L; i++)
 		{
 			System.out.println(i + " converts to " + nc.convert(i));
 		}
