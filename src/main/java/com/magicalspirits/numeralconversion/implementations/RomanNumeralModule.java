@@ -1,4 +1,4 @@
-package com.magicalspirits.numeralconversion;
+package com.magicalspirits.numeralconversion.implementations;
 
 import java.util.SortedMap;
 import java.util.TreeMap;
@@ -10,6 +10,8 @@ import com.google.inject.Injector;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
+import com.magicalspirits.numeralconversion.NumeralConverter;
+import com.magicalspirits.numeralconversion.SortedNumeralConverter;
 
 public class RomanNumeralModule extends AbstractModule {
 

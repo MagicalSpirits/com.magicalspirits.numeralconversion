@@ -1,4 +1,4 @@
-package com.magicalspirits.numeralconversion;
+package com.magicalspirits.numeralconversion.implementations;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -8,7 +8,7 @@ import org.junit.Test;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.magicalspirits.numeralconversion.NumeralConverter;
-import com.magicalspirits.numeralconversion.USDollarsModule;
+import com.magicalspirits.numeralconversion.implementations.USDollarsModule;
 
 public class TestUSCurrencyNumeralConversion 
 {

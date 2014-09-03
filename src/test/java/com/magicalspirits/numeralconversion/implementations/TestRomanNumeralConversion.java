@@ -1,4 +1,4 @@
-package com.magicalspirits.numeralconversion;
+package com.magicalspirits.numeralconversion.implementations;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -12,7 +12,7 @@ import com.google.common.collect.Sets;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.magicalspirits.numeralconversion.NumeralConverter;
-import com.magicalspirits.numeralconversion.RomanNumeralModule;
+import com.magicalspirits.numeralconversion.implementations.RomanNumeralModule;
 
 public class TestRomanNumeralConversion {
 
