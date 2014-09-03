@@ -18,7 +18,7 @@ public class RomanNumeralModule extends AbstractModule {
 	@Override
 	protected void configure() 
 	{
-		bind(NumeralConverter.class).to(SortedNumeralConverter.class);
+		bind(NumeralConverter.class).to(DoubleBarTrimmingSortedNumeralConverter.class);
 	}
 	
 	@Provides @Named(SortedNumeralConverter.SORTED_CONVERSION_LIST) @Singleton
@@ -75,6 +75,15 @@ public class RomanNumeralModule extends AbstractModule {
 		// the initial of nulla, in a table of epacts, all written in Roman numerals.
 		conversionList.put(0L, "N"); 
 		return conversionList;
+	}
+	
+	private static class DoubleBarTrimmingSortedNumeralConverter extends SortedNumeralConverter
+	{
+		@Override
+		public String convert(long value) throws IllegalArgumentException
+		{
+			return super.convert(value).replace("||", "");
+		}
 	}
 	
 	public static void main(String[] args)

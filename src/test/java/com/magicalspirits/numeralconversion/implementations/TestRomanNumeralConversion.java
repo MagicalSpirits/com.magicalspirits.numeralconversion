@@ -95,7 +95,7 @@ public class TestRomanNumeralConversion {
 	{
 		//one thousand is interesting because it can be represented by or bars or by M. M is more correct
 		NumeralConverter nc = testInjector.getInstance(NumeralConverter.class);
-		assertEquals("|M\u0305||M\u0305|", nc.convert(200000000000L));
+		assertEquals("|M\u0305M\u0305|", nc.convert(200000000000L));
 	}
 	
 	
